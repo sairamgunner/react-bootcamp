@@ -1,0 +1,18 @@
+Components
+this.state
+this.props
+using map function for for loop
+arrow function
+babel - transpilation
+parcel - bundler -> alternate to webpack
+lifecycle hooks
+stateless function
+
+David Katz's Repo:
+https://github.com/15Dkatz/react-bootcamp/tree/master/portfolio/src/assets
+
+Bootstrap website:
+https://getbootstrap.com/docs/3.3/getting-started/
+
+Google Fonts:
+https://fonts.google.com/
