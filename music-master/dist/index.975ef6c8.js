@@ -27086,12 +27086,52 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class App extends (0, _react.Component) {
+    state = {
+        artistQuery: ""
+    };
+    updateArtistQuery = (event)=>{
+        console.log("event.target.value", event.target.value);
+        this.setState({
+            artistQuery: event.target.value
+        });
+    };
+    searchArtist = ()=>{
+        console.log("searching for artist this.state", this.state);
+    };
+    handleKeyPress = (event)=>{
+        if (event.key === "Enter") this.searchArtist();
+    };
     render() {
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: "React App"
-        }, void 0, false, {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "Music Master"
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 24,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    onChange: this.updateArtistQuery,
+                    onKeyDown: this.handleKeyPress,
+                    placeholder: "Search for an Artist"
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 27,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: this.searchArtist,
+                    children: "Search"
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 31,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 6,
+            lineNumber: 23,
             columnNumber: 13
         }, this);
     }
