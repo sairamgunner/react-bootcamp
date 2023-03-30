@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-    state = { artistQuery: '' };
+    state = { artistQuery: '', artistId: '' };
 
     updateArtistQuery = event => {
         console.log('event.target.value', event.target.value);
@@ -10,6 +10,11 @@ class App extends Component {
 
     searchArtist = () => {
         console.log('searching for artist this.state', this.state);
+        fetch('https://spotify-api-wrapper.appspot.com/artist/' + this.state.artistQuery)
+        .then(response => console.log(response.json()))
+        // .then(json =>  this.setState({ artistId: json.items[0].id } ))
+        // .then(json =>  console.log(json.items[0].id));
+        // .then(json =>  console.log(json));
     }
 
     handleKeyPress = event => {
