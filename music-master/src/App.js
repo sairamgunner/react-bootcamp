@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-    state = { artistQuery: '', artistId: '' };
+    state = { artistQuery: '', artistId: null };
 
     updateArtistQuery = event => {
-        console.log('event.target.value', event.target.value);
         this.setState({ artistQuery: event.target.value });
     }
 
     searchArtist = () => {
-        console.log('searching for artist this.state', this.state);
         fetch('https://spotify-api-wrapper.appspot.com/artist/' + this.state.artistQuery)
-        .then(response => console.log(response.json()))
-        // .then(json =>  this.setState({ artistId: json.items[0].id } ))
-        // .then(json =>  console.log(json.items[0].id));
-        // .then(json =>  console.log(json));
+        .then(response => response.json())
+        .then(json =>  {
+            if (json.artists > 0) {
+                this.setState({ artistId: json.artists.items[0].id })
+            }
+            fetch('https://spotify-api-wrapper.appspot.com/artist/' + this.state.artistId + '/top-tracks')
+            .then(response => console.log(response.json()))
+        })
     }
 
     handleKeyPress = event => {

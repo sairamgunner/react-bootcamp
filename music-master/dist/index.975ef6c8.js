@@ -27088,20 +27088,20 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 class App extends (0, _react.Component) {
     state = {
         artistQuery: "",
-        artistId: ""
+        artistId: null
     };
     updateArtistQuery = (event)=>{
-        console.log("event.target.value", event.target.value);
         this.setState({
             artistQuery: event.target.value
         });
     };
     searchArtist = ()=>{
-        console.log("searching for artist this.state", this.state);
-        fetch("https://spotify-api-wrapper.appspot.com/artist/" + this.state.artistQuery).then((response)=>console.log(response.json()));
-    // .then(json =>  this.setState({ artistId: json.items[0].id } ))
-    // .then(json =>  console.log(json.items[0].id));
-    // .then(json =>  console.log(json));
+        fetch("https://spotify-api-wrapper.appspot.com/artist/" + this.state.artistQuery).then((response)=>response.json()).then((json)=>{
+            if (json.artists > 0) this.setState({
+                artistId: json.artists.items[0].id
+            });
+            fetch("https://spotify-api-wrapper.appspot.com/artist/" + this.state.artistId + "/top-tracks").then((response)=>console.log(response.json()));
+        });
     };
     handleKeyPress = (event)=>{
         if (event.key === "Enter") this.searchArtist();
@@ -27113,7 +27113,7 @@ class App extends (0, _react.Component) {
                     children: "Music Master"
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 29,
+                    lineNumber: 31,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27122,7 +27122,7 @@ class App extends (0, _react.Component) {
                     placeholder: "Search for an Artist"
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 32,
+                    lineNumber: 34,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27130,13 +27130,13 @@ class App extends (0, _react.Component) {
                     children: "Search"
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 36,
+                    lineNumber: 38,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 28,
+            lineNumber: 30,
             columnNumber: 13
         }, this);
     }
