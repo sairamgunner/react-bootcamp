@@ -34,7 +34,7 @@
 102E:\Udemy\React\react-bootcamp\music-master\node_modules\lmdb\node_modules\node-addon-api\noexcept.gypi121436361000000000 0
 76E:\Udemy\React\react-bootcamp\music-master\node_modules\posthtml-render\dist133243125903600561 1
 80E:\Udemy\React\react-bootcamp\music-master\node_modules\on-finished\package.json133243132314358279 0
-47E:\Udemy\React\react-bootcamp\music-master\dist133246698923593772 1
+47E:\Udemy\React\react-bootcamp\music-master\dist133246715120112851 1
 68E:\Udemy\React\react-bootcamp\music-master\node_modules\path-dirname133243132326612375 1
 138E:\Udemy\React\react-bootcamp\music-master\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\side-effects-false-glob\sub\b133243125999830467 1
 74E:\Udemy\React\react-bootcamp\music-master\node_modules\map-stream\LICENCE130308555080000000 0
@@ -57,7 +57,7 @@
 107E:\Udemy\React\react-bootcamp\music-master\node_modules\caniuse-lite\data\features\css-placeholder-shown.js121436361000000000 0
 73E:\Udemy\React\react-bootcamp\music-master\node_modules\debug\src\node.js131505607000000000 0
 90E:\Udemy\React\react-bootcamp\music-master\node_modules\@parcel\logger\test\Logger.test.js121436361000000000 0
-53E:\Udemy\React\react-bootcamp\music-master\src\App.js133246698910617706 0
+53E:\Udemy\React\react-bootcamp\music-master\src\App.js133246715110077209 0
 80E:\Udemy\React\react-bootcamp\music-master\node_modules\htmlparser2\package.json133243126179950430 0
 74E:\Udemy\React\react-bootcamp\music-master\node_modules\domutils\readme.md121436361000000000 0
 70E:\Udemy\React\react-bootcamp\music-master\node_modules\react\index.js121436361000000000 0
@@ -521,7 +521,7 @@
 108E:\Udemy\React\react-bootcamp\music-master\node_modules\@swc\helpers\lib\_object_without_properties_loose.js133133340060000000 0
 79E:\Udemy\React\react-bootcamp\music-master\node_modules\parent-module\readme.md121436361000000000 0
 83E:\Udemy\React\react-bootcamp\music-master\node_modules\repeat-element\package.json133243132301392632 0
-69E:\Udemy\React\react-bootcamp\music-master\dist\index.975ef6c8.js.map133246698923563841 0
+69E:\Udemy\React\react-bootcamp\music-master\dist\index.975ef6c8.js.map133246715120062975 0
 62E:\Udemy\React\react-bootcamp\music-master\node_modules\dotenv133243126224157713 1
 86E:\Udemy\React\react-bootcamp\music-master\node_modules\type-fest\ts41\snake-case.d.ts121436361000000000 0
 82E:\Udemy\React\react-bootcamp\music-master\node_modules\is-extendable\package.json133243132349887996 0
@@ -1386,7 +1386,7 @@
 97E:\Udemy\React\react-bootcamp\music-master\node_modules\caniuse-lite\data\features\svg-filters.js121436361000000000 0
 91E:\Udemy\React\react-bootcamp\music-master\node_modules\postcss-value-parser\lib\index.d.ts121436361000000000 0
 92E:\Udemy\React\react-bootcamp\music-master\node_modules\css-tree\lib\syntax\node\Function.js121436361000000000 0
-83E:\Udemy\React\react-bootcamp\music-master\dist\roboto-condensed.light.a5f9c5f3.ttf133246698921232999 0
+83E:\Udemy\React\react-bootcamp\music-master\dist\roboto-condensed.light.a5f9c5f3.ttf133246715117498555 0
 82E:\Udemy\React\react-bootcamp\music-master\node_modules\websocket-driver\README.md121436361000000000 0
 77E:\Udemy\React\react-bootcamp\music-master\node_modules\parseurl\package.json133243132314358279 0
 116E:\Udemy\React\react-bootcamp\music-master\node_modules\define-property\node_modules\is-accessor-descriptor\index.js131539902560000000 0
@@ -2187,7 +2187,7 @@
 93E:\Udemy\React\react-bootcamp\music-master\node_modules\source-map-resolve\lib\resolve-url.js121436361000000000 0
 105E:\Udemy\React\react-bootcamp\music-master\node_modules\source-map-resolve\lib\source-map-resolve-node.js121436361000000000 0
 90E:\Udemy\React\react-bootcamp\music-master\node_modules\remove-trailing-separator\index.js131473455180000000 0
-70E:\Udemy\React\react-bootcamp\music-master\dist\index.61d3354a.css.map133246698923513966 0
+70E:\Udemy\React\react-bootcamp\music-master\dist\index.61d3354a.css.map133246715120052963 0
 71E:\Udemy\React\react-bootcamp\music-master\node_modules\source-map\dist133243125911411252 1
 98E:\Udemy\React\react-bootcamp\music-master\node_modules\send\node_modules\on-finished\package.json133243132296394499 0
 84E:\Udemy\React\react-bootcamp\music-master\node_modules\source-map\lib\base64-vlq.js131369414910000000 0
@@ -6076,7 +6076,7 @@
 92E:\Udemy\React\react-bootcamp\music-master\node_modules\@jridgewell\gen-mapping\src\types.ts121436361000000000 0
 104E:\Udemy\React\react-bootcamp\music-master\node_modules\@jridgewell\gen-mapping\dist\gen-mapping.mjs.map121436361000000000 0
 113E:\Udemy\React\react-bootcamp\music-master\node_modules\@jridgewell\gen-mapping\dist\types\sourcemap-segment.d.ts121436361000000000 0
-58E:\Udemy\React\react-bootcamp\music-master\dist\index.html133246698922997293 0
+58E:\Udemy\React\react-bootcamp\music-master\dist\index.html133246715119408926 0
 101E:\Udemy\React\react-bootcamp\music-master\node_modules\@jridgewell\gen-mapping\dist\types\types.d.ts121436361000000000 0
 90E:\Udemy\React\react-bootcamp\music-master\node_modules\@babel\helper-validator-identifier133243126226183766 1
 72E:\Udemy\React\react-bootcamp\music-master\node_modules\@babel\highlight133243126352155548 1
@@ -6133,7 +6133,7 @@
 65E:\Udemy\React\react-bootcamp\music-master\node_modules\.bin\uuid133243132365973603 0
 69E:\Udemy\React\react-bootcamp\music-master\node_modules\.bin\uuid.cmd133243132365973603 0
 69E:\Udemy\React\react-bootcamp\music-master\node_modules\.bin\uuid.ps1133243132365973603 0
-75E:\Udemy\React\react-bootcamp\music-master\dist\economica-bold.a4fc1a89.ttf133246698921223018 0
-66E:\Udemy\React\react-bootcamp\music-master\dist\index.61d3354a.css133246698923474450 0
-65E:\Udemy\React\react-bootcamp\music-master\dist\index.975ef6c8.js133246698923484068 0
+75E:\Udemy\React\react-bootcamp\music-master\dist\economica-bold.a4fc1a89.ttf133246715117488582 0
+66E:\Udemy\React\react-bootcamp\music-master\dist\index.61d3354a.css133246715119913380 0
+65E:\Udemy\React\react-bootcamp\music-master\dist\index.975ef6c8.js133246715119913380 0
 62E:\Udemy\React\react-bootcamp\music-master\.vscode\launch.json133245255031272385 0

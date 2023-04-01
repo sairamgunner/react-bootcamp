@@ -27087,8 +27087,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class App extends (0, _react.Component) {
     state = {
-        artistQuery: "",
-        artistId: null
+        artistQuery: null,
+        artistId: ""
     };
     updateArtistQuery = (event)=>{
         this.setState({
@@ -27097,10 +27097,13 @@ class App extends (0, _react.Component) {
     };
     searchArtist = ()=>{
         fetch("https://spotify-api-wrapper.appspot.com/artist/" + this.state.artistQuery).then((response)=>response.json()).then((json)=>{
-            if (json.artists > 0) this.setState({
-                artistId: json.artists.items[0].id
-            });
-            fetch("https://spotify-api-wrapper.appspot.com/artist/" + this.state.artistId + "/top-tracks").then((response)=>console.log(response.json()));
+            if (json.artists) {
+                console.log("In if condition");
+                this.setState({
+                    artistId: json.artists.items[0].id
+                });
+                fetch("https://spotify-api-wrapper.appspot.com/artist/" + this.state.artistId + "/top-tracks").then((response)=>console.log(response.json()));
+            }
         });
     };
     handleKeyPress = (event)=>{
@@ -27113,7 +27116,7 @@ class App extends (0, _react.Component) {
                     children: "Music Master"
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 31,
+                    lineNumber: 32,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27122,7 +27125,7 @@ class App extends (0, _react.Component) {
                     placeholder: "Search for an Artist"
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 34,
+                    lineNumber: 35,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27130,13 +27133,13 @@ class App extends (0, _react.Component) {
                     children: "Search"
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 30,
+            lineNumber: 31,
             columnNumber: 13
         }, this);
     }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-    state = { artistQuery: '', artistId: null };
+    state = { artistQuery: null, artistId: '' };
 
     updateArtistQuery = event => {
         this.setState({ artistQuery: event.target.value });
@@ -11,11 +11,12 @@ class App extends Component {
         fetch('https://spotify-api-wrapper.appspot.com/artist/' + this.state.artistQuery)
         .then(response => response.json())
         .then(json =>  {
-            if (json.artists > 0) {
-                this.setState({ artistId: json.artists.items[0].id })
+            if (json.artists) {
+                console.log('In if condition');
+                this.setState({ artistId: json.artists.items[0].id });
+                fetch('https://spotify-api-wrapper.appspot.com/artist/' + this.state.artistId + '/top-tracks')
+                .then(response => console.log(response.json()))
             }
-            fetch('https://spotify-api-wrapper.appspot.com/artist/' + this.state.artistId + '/top-tracks')
-            .then(response => console.log(response.json()))
         })
     }
 
