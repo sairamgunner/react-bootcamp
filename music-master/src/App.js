@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Artist from './components/Artist';
 
 class App extends Component {
     state = { artistQuery: null, artist: null, tracks: [] };
@@ -12,15 +13,12 @@ class App extends Component {
         .then(response => response.json())
         .then(json =>  {
             if (json.artists) {
-                console.log('In if condition');
-                this.setState({ artist: json.artists });
+                this.setState({ artist: json.artists.items[0] });
                 fetch('https://spotify-api-wrapper.appspot.com/artist/' + json.artists.items[0].id + '/top-tracks')
                 .then(response => response.json())
-                .then(json => {
-                    this.setState({ tracks: json.tracks })
-                })
+                .then(json => { this.setState({ tracks: json.tracks })}).catch(error => alert(error.message))
             }
-        })
+        }).catch(error => alert(error.message));
     }
 
     handleKeyPress = event => {
@@ -32,14 +30,17 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h2>
-                    Music Master
-                </h2>
-                <input 
-                    onChange={this.updateArtistQuery}
-                    onKeyDown={this.handleKeyPress}
-                    placeholder='Search for an Artist'/>
-                <button onClick={this.searchArtist}>Search</button>
+                <div>
+                    <h2>
+                        Music Master
+                    </h2>
+                    <input 
+                        onChange={ this.updateArtistQuery }
+                        onKeyDown={ this.handleKeyPress }
+                        placeholder='Search for an Artist'/>
+                    <button onClick={ this.searchArtist }>Search</button>
+                </div>
+                <Artist artist={ this.state.artist }/>
             </div>
         );
     }
