@@ -4,6 +4,7 @@ const Artist = ({ artist }) => {
     if (!artist) return null;
 
     const { images, name, genres, followers } = artist;
+    // Need to add function to capitalize first letter of each word in Genre
 
     return (
         <div>
