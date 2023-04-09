@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Artist from './components/Artist';
+import Tracks from './components/Tracks';
 
 class App extends Component {
     state = { artistQuery: null, artist: null, tracks: [] };
@@ -41,6 +42,7 @@ class App extends Component {
                     <button onClick={ this.searchArtist }>Search</button>
                 </div>
                 <Artist artist={ this.state.artist }/>
+                <Tracks tracks={ this.state.tracks }/>
             </div>
         );
     }

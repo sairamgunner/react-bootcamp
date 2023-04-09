@@ -16,3 +16,6 @@ https://getbootstrap.com/docs/3.3/getting-started/
 
 Google Fonts:
 https://fonts.google.com/
+
+How to pass objects between components?
+https://javascript.plainenglish.io/how-to-pass-data-from-one-component-to-other-component-in-react-cbbafc755995
