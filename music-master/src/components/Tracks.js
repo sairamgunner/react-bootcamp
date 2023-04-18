@@ -19,6 +19,17 @@ class Tracks extends Component {
         }
     }
 
+    trackIcon = track => {
+        if(!track.preview_url){
+            return <span>N/A</span>
+        }
+        if (this.state.playing && this.state.playingPreviewUrl == track.preview_url) {
+            return (<span> || </span>)
+        }
+
+        return <span>&#9654;</span>;
+    }
+
     render() {
         const { tracks } = this.props;
         
@@ -30,20 +41,23 @@ class Tracks extends Component {
 
                     return(
                         <div 
-                        key={id} 
-                        onClick={this.toggleAudio(preview_url)}
-                        style={{ 
-                            display: 'inline-block'
-                         }}>
+                        key={ id } 
+                        onClick={ this.toggleAudio(preview_url) }
+                        className='track'
+                        >
                             <img 
-                            src={album.images[0].url} 
+                            src={ album.images[0].url } 
                             alt='track-image'
-                            style={{ 
-                                height:200, 
-                                width:200,
-                                objectFit: 'cover'
-                             }}/>
-                            <p>{name}</p>
+                            className='track-image'
+                            />
+                            <p
+                            className='track-text'>
+                                { name }
+                            </p>
+                            <p
+                            className='track-icon'>
+                                { this.trackIcon(track) }
+                            </p>
                         </div>
                     )
 
